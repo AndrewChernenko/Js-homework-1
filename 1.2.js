@@ -9,4 +9,4 @@ function polin(insert) {
     }
     return bulka;
 }
-console.log(polin('nahui'));
+console.log(polin('some'));
