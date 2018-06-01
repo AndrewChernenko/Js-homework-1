@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+
+
+    var result = vowels_amount();
+    function vowels_amount() {
+        var vovels_field = prompt('Введите слово');
+        var vowels_list = ["а", "у", "о", "ы", "и", "э", "я", "ю", "ё", "е"];
+        var vowels_counter = 0;
+        for(var i = 0; i < vovels_field.length; i++) {
+            for(var v = 0; v < 6; v++) {
+                if( vovels_field[i] == vowels_list[v] )
+                    vowels_counter++;
+            }
+        }
+        alert("Количество гласных: "+vowels_counter);
+    }
+</script>
+</body>
+</html>
